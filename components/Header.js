@@ -55,7 +55,7 @@ const Header = () => {
                     Projects
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="#skills">
                   <li className="text-[16px] bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-125 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Skills
                   </li>
@@ -125,27 +125,27 @@ const Header = () => {
             <div className=" flex">
               <ul>
                 <Link href="/">
-                  <li className=" text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110  hover:from-[#13B0F5] hover:to-[#E70FAA]">
+                  <li onClick={()=>setNav(false)} className=" text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110  hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Home
                   </li>
                 </Link>
                 <Link href="/">
-                  <li className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
+                  <li onClick={()=>setNav(false)} className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     About
                   </li>
                 </Link>
                 <Link href="/">
-                  <li className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
+                  <li onClick={()=>setNav(false)} className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Projects
                   </li>
                 </Link>
-                <Link href="/">
-                  <li className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
+                <Link href="#skills">
+                  <li onClick={()=>setNav(false)} className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Skills
                   </li>
                 </Link>
-                <Link href="/">
-                  <li className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
+                <Link href="#contact">
+                  <li onClick={()=>setNav(false)} className="text-sm md:text-[16px] py-4 bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-110 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Contact
                   </li>
                 </Link>

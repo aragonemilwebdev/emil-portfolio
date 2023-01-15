@@ -1,19 +1,18 @@
-import ContactSection from '@/components/ContactSection'
-import Header from '@/components/Header'
-import HeroSection from '@/components/HeroSection'
-import React from 'react'
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import Skills from "@/components/Skills";
+import React from "react";
 
 const Home = () => {
   return (
     <>
-      <div >
-        <Header />
+      <div>
         <HeroSection />
+        <Skills />
         <ContactSection />
-        <div className=' h-screen'></div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth!important;
 }
 
 .gradiant-bg {
@@ -26,6 +26,10 @@ html {
 
     h2 {
         @apply text-3xl font-bold  md:text-4xl lg:text-5xl
+    }
+
+    h3 {
+        @apply  font-bold text-sm  md:text-lg lg:text-xl
     }
 
     li {
