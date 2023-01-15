@@ -108,7 +108,7 @@ const Header = () => {
             <div className=" pb-5 border-b border-gray-300 mb-5">
               <div className=" flex justify-between items-center">
                 <Image
-                  src="/../public/assets/navLogo.png"
+                  src="/navLogo.png"
                   alt="/"
                   width="100"
                   height="50"
@@ -157,14 +157,20 @@ const Header = () => {
               </p>
             </div>
             <div className=" flex justify-start gap-5 sm:gap-10 items-center w-full sm:w-[80%] mt-5">
-              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white">
-                <FaGithub size={20} className=" hover:scale-150" />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                <Link href="#">
+                    <FaGithub className=' w-5 h-5 lg:w-7 lg:h-7' />
+                </Link>
               </div>
-              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white">
-                <FaFacebook size={20} className=" hover:scale-150" />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                <Link href="#">
+                    <FaFacebook className=' w-5 h-5 lg:w-7 lg:h-7' />
+                </Link>
               </div>
-              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white">
-                <FaLinkedin size={20} className=" hover:scale-150" />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                <Link href="#">
+                    <FaLinkedin className=' w-5 h-5 lg:w-7 lg:h-7' />
+                </Link>
               </div>
             </div>
           </div>
