@@ -14,7 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 95) {
         setShadow(true);
       } else {
         setShadow(false);
