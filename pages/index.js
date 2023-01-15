@@ -8,6 +8,7 @@ const Home = () => {
       <div >
         <Header />
         <HeroSection />
+        <div className=' h-screen'></div>
       </div>
     </>
   )
