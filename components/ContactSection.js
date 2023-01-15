@@ -32,7 +32,7 @@ const ContactSection = () => {
             <p className=' py-4'>I am available  for freelancer or full time position. Contact me and let's talk</p>
         </div>
         <div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-6">
               <p className=" uppercase bg-clip-text font-bold flex">
                 Connect With Me
               </p>
@@ -63,11 +63,27 @@ const ContactSection = () => {
         <form>
             <div className=' grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className=' flex flex-col'>
-                    <label className=' uppercase text-sm pt-2'>Name</label>
+                    <label className=' uppercase text-sm py-2'>Name</label>
                     <input className=' border-2 rounded-lg p-3 flex border-gray-300' type='text' />
                 </div>
-                
+                <div className=' flex flex-col'>
+                    <label className=' uppercase text-sm py-2'>Phone number</label>
+                    <input className=' border-2 rounded-lg p-3 flex border-gray-300' type='number' />
+                </div>
             </div>
+            <div className=' flex flex-col py-2'>
+                <label className=' uppercase text-sm py-2'>Email</label>
+                <input className=' border-2 rounded-lg p-3 flex border-gray-300' type='email' />
+            </div>
+            <div className=' flex flex-col py-2'>
+                <label className=' uppercase text-sm py-2'>Subject</label>
+                <input className=' border-2 rounded-lg p-3 flex border-gray-300' type='text' />
+            </div>
+            <div className=' flex flex-col py-2'>
+                <label className=' uppercase text-sm py-2'>Message</label>
+                <textarea className=' border-2 rounded-lg p-3 flex border-gray-300' type='text' rows="10"></textarea>
+            </div>
+            <button className=' w-full mt-4'>Send Message</button>
         </form>
     </div>
 </div>
