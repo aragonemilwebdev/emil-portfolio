@@ -15,7 +15,7 @@ const HeroSection = () => {
                 </div>
                 <div  className=' w-[200px] lg:w-[350px] h-full items-center sm:flex mt-10 sm:mt-0'>
                     <Image
-                        src='/./assets/bio/emil-pic.png'
+                        src='/emil-pic.png'
                         alt='/'
                         width={350}
                         height={350}

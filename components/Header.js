@@ -28,12 +28,14 @@ const Header = () => {
       <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ECF0F3]' : 'fixed w-full h-20 z-[100]'}>
         <div className=" flex justify-between items-center h-full px-2 2xl:px-16">
           <div>
+            <Link href="/">
             <Image
               src="/../public/assets/navLogo.png"
               alt="/"
               width="100"
               height="50"
             />
+            </Link>
           </div>
           <div className=" hidden md:flex items-center">
             <div>
@@ -58,7 +60,7 @@ const Header = () => {
                     Skills
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="#contact">
                   <li className="text-[16px] bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#000000] hover:font-bold hover:scale-125 hover:from-[#13B0F5] hover:to-[#E70FAA]">
                     Contact
                   </li>
