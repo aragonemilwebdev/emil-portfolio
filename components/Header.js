@@ -30,7 +30,7 @@ const Header = () => {
           <div>
             <Link href="/">
             <Image
-              src="/../public/assets/navLogo.png"
+              src="/navLogo.png"
               alt="/"
               width="100"
               height="50"
