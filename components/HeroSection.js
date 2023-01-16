@@ -12,6 +12,7 @@ const HeroSection = () => {
                     My name is</p>
                     <h1>EMIL L. ARAGON</h1>
                     <p className='text-3xl font-bold  md:text-4xl lg:text-6xl text-[#42446E]'>I build things for web</p>
+                    <button className=' w-full sm:w-[250px] mt-10 py-3'>Download my CV</button>
                 </div>
                 <div  className=' w-[200px] lg:w-[350px] h-full items-center sm:flex mt-10 sm:mt-0'>
                     <Image
