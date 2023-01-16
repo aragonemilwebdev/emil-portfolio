@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className=' pt-28 w-full h-full xl:h-screen text-center sm:text-left'>
             <div className=' max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col sm:flex-row justify-between items-center'>
                 <div>
-                    <p className='text-3xl font-bold  md:text-4xl lg:text-6xl text-[#42446E]'>Hi 👋,
+                    <p className='text-3xl font-bold  md:text-4xl lg:text-6xl text-[#42446E]'>Hi <span className="wave">👋🏻</span>,
                     <br />
                     My name is</p>
                     <h1>EMIL L. ARAGON</h1>

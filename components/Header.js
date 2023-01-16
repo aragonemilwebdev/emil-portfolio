@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Head from "next/head";
 
 const Header = () => {
+
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -25,6 +27,10 @@ const Header = () => {
 
   return (
     <>
+        <Head>
+        <title>Emil Aragon | Portfolio</title>
+        <meta name="description" content="This is my page description" />
+      </Head>
       <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ECF0F3]' : 'fixed w-full h-20 z-[100]'}>
         <div className=" flex justify-between items-center h-full px-2 2xl:px-16">
           <div>
