@@ -11,7 +11,6 @@ const Home = () => {
         <HeroSection />
         <Skills />
         <ContactSection />
-        <Contact2 />
       </div>
     </>
   );

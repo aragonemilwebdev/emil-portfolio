@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {SiUpwork} from "react-icons/si"
 import Head from "next/head";
 
 const Header = () => {
+
+  const github = "https://github.com/aragonemilwebdev/"
+  const linkedin = "https://www.linkedin.com/in/aragon-emil/"
+  const upwork = "https://www.upwork.com/freelancers/~016cdd33babcc32bb1"
 
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -75,22 +80,22 @@ const Header = () => {
             </div>
           </div>
           <div className=" hidden md:flex items-center">
-            <ul className=" flex gap-2">
-              <Link href="#">
-                <li>
-                  <FaGithub size={25} className=" hover:scale-150" />
-                </li>
-              </Link>
-              <Link href="#">
-                <li>
-                  <FaFacebook size={25} className=" hover:scale-150" />
-                </li>
-              </Link>
-              <Link href="#">
-                <li>
-                  <FaLinkedin size={25} className=" hover:scale-150" />
-                </li>
-              </Link>
+            <ul className=" flex gap-5">
+              <Link target="_blank" href={github}>
+                  <li className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                  <FaGithub className=' w-5 h-5 lg:w-6 lg:h-6' />
+                  </li>
+                </Link>
+              <Link target="_blank" href={linkedin}>
+                  <li className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                  <FaLinkedin className=' w-5 h-5 lg:w-6 lg:h-6' />
+                  </li>
+                </Link>
+                <Link target="_blank" href={upwork}>
+                  <li className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
+                  <SiUpwork className=' w-5 h-5 lg:w-6 lg:h-6' />
+                  </li>
+                </Link>
             </ul>
           </div>
           <div onClick={handleNav} className=" md:hidden">
@@ -164,18 +169,18 @@ const Header = () => {
             </div>
             <div className=" flex justify-start gap-5 sm:gap-10 items-center w-full sm:w-[80%] mt-5">
               <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                <Link href="#">
+                <Link target="_blank" href={github}>
                     <FaGithub className=' w-5 h-5 lg:w-7 lg:h-7' />
                 </Link>
               </div>
               <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                <Link href="#">
-                    <FaFacebook className=' w-5 h-5 lg:w-7 lg:h-7' />
+                <Link target="_blank" href={linkedin}>
+                    <FaLinkedin className=' w-5 h-5 lg:w-7 lg:h-7' />
                 </Link>
               </div>
               <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                <Link href="#">
-                    <FaLinkedin className=' w-5 h-5 lg:w-7 lg:h-7' />
+                <Link target="_blank" href={upwork}>
+                    <SiUpwork className=' w-5 h-5 lg:w-7 lg:h-7' />
                 </Link>
               </div>
             </div>

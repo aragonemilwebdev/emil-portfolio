@@ -2,9 +2,13 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 
 const ContactSection = () => {
+  const github = "https://github.com/aragonemilwebdev/"
+  const linkedin = "https://www.linkedin.com/in/aragon-emil/"
+  const upwork = "https://www.upwork.com/freelancers/~016cdd33babcc32bb1"
 
 
   return (
@@ -46,18 +50,18 @@ const ContactSection = () => {
                   </div>
                   <div className=" flex justify-start gap-5 sm:gap-10 items-center w-full sm:w-[80%] mt-5">
                     <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                      <Link href="#">
+                      <Link target="_blank" href={github}>
                         <FaGithub className=" w-5 h-5 lg:w-7 lg:h-7" />
                       </Link>
                     </div>
                     <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                      <Link href="#">
-                        <FaFacebook className=" w-5 h-5 lg:w-7 lg:h-7" />
+                      <Link target="_blank" href={linkedin}>
+                        <FaLinkedin className=" w-5 h-5 lg:w-7 lg:h-7" />
                       </Link>
                     </div>
                     <div className=" rounded-full shadow-lg shadow-gray-400 p-[6px] sm:p-2 gradiant-bg text-white hover:scale-125">
-                      <Link href="#">
-                        <FaLinkedin className=" w-5 h-5 lg:w-7 lg:h-7" />
+                      <Link href={upwork}>
+                        <SiUpwork className=" w-5 h-5 lg:w-7 lg:h-7" />
                       </Link>
                     </div>
                   </div>
