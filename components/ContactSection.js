@@ -1,9 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const ContactSection = () => {
+
+
   return (
     <>
       <div className=" w-full lg:h-screen">
@@ -64,7 +67,7 @@ const ContactSection = () => {
             {/*Right*/}
             <div className=" col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="p-4">
-                <form>
+                <form >
                   <div className=" grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className=" flex flex-col">
                       <label className=" uppercase text-sm py-2">Name</label>
@@ -88,6 +91,7 @@ const ContactSection = () => {
                     <input
                       className=" border-2 rounded-lg p-2 md:p-3 flex border-gray-300"
                       type="email"
+                      name="email"
                     />
                   </div>
                   <div className=" flex flex-col py-2">
@@ -105,7 +109,7 @@ const ContactSection = () => {
                       rows="10"
                     ></textarea>
                   </div>
-                  <button className=" w-full mt-4">Send Message</button>
+                  <button type="submit" className=" shadow-xl shadow-gray-400 rounded-md uppercase bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] text-white w-full mt-4 py-3">Send Message</button>
                 </form>
               </div>
             </div>
