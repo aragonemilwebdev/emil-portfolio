@@ -1,7 +1,6 @@
-import Contact2 from "@/components/Contact2";
-import ContactSection from "@/components/ContactSection";
-import HeroSection from "@/components/HeroSection";
-import Skills from "@/components/Skills";
+import ContactSection from "../components/ContactSection";
+import HeroSection from "../components/HeroSection";
+import Skills from "../components/Skills";
 import React from "react";
 
 const Home = () => {
