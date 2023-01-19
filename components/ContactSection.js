@@ -35,7 +35,7 @@ const ContactSection = () => {
   }
 
 
-  return (
+  return ( 
     <>
       <div className=" w-full lg:h-screen">
         <div id="contact" className="max-w-[1240px] m-auto px-2 py-16 w-full pt-[90px]">
