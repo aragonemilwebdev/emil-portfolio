@@ -5,9 +5,8 @@ export default  async function (req, res) {
       port: 465,
       host: "smtp.gmail.com",
       auth: {
-
-        user: process.env.GMAIL_PASS,
-        pass: process.env.GMAIL_USER,
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS
       },
       secure: true,
     });
